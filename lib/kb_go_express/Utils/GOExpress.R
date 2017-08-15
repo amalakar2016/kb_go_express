@@ -204,7 +204,7 @@ allgenes$external_gene_name <- sub(":$", "", paste(allgenes$gene_id, allgenes$de
 
 ##Preparing the GO and genes related annotation Files #############
 
-allGO <- read.csv(opt$goDes, header = T)#opt$goDes--Ptrichocarpa_210_v3.0.allGO.txt
+allGO <- read.table(opt$goDes, sep = "\t", header = T)#opt$goDes--Ptrichocarpa_210_v3.0.allGO.txt
 
 GOgenes <- read.table(opt$gi2go, header = T, sep = "\t", stringsAsFactors = F) # opt$gi2go -- Ptrichocarpa_210_v3.0.gi_go.txt
 
